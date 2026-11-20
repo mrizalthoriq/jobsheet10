@@ -26,5 +26,6 @@ public class BioskopWithScanner24 {
                 break;
             }
         }
+        sc.close();
     }
 }
