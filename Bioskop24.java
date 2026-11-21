@@ -21,20 +21,20 @@ public class Bioskop24 {
         System.out.println(penonton[1].length);
         System.out.println(penonton[2].length);
         System.out.println(penonton[3].length);
-//pertanyaan 5
+//pertanyaan 5 & 9
         for (int i = 0; i < penonton.length; i++) {
-            System.out.println("Panjang baris ke-" + (i + 1) + ": " + penonton[i].length);
+            System.out.println("Panjang baris ke-" + (i + 1) + ": " + String.join(", ", penonton[i]));
         }
 //pertanyaan 6
         System.out.println(penonton.length);
         for (String barisPenonton []: penonton) {
             System.out.println("Panjang baris: " + barisPenonton.length);
         }
-//pertanyaan 7
+//pertanyaan 7 & 8
         System.out.println("Penonton pada baris ke-3: ");
 
-        for (int i = 0; i < penonton[2].length; i++) {
-            System.out.println(penonton[2][i]);
+        for (String i : penonton[2]) {
+            System.out.println(i);
         }
     }
 }
