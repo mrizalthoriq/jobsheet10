@@ -53,7 +53,8 @@ public class BioskopWithScanner24 {
 
                     for (int i = 0; i < penonton.length; i++) {
                         for (int j = 0; j < penonton[i].length; j++) {
-                            System.out.printf("Penonton baris %d Kolom %d: %s\n", (i + 1), (j + 1), penonton[i][j]);
+                            String namaPenonton = (penonton[i][j] != null) ? penonton[i][j] : "***";
+                            System.out.printf("Penonton baris %d Kolom %d: %s\n", (i + 1), (j + 1), namaPenonton); 
                         }
                     }
                     break;
